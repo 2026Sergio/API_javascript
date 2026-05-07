@@ -1,41 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casos covid 19</title>
+    <title>casos covid 19</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="bloque-titulo">
-            <h1>casos covid 19</h1>
+        <div class="contenido-encabezado">
+            <h1>Casos covid 19</h1>
             <p>Monitoreo de casos a nivel mundial</p>
         </div>
     </header>
 
-    <nav class="barra-fija">
-        <div class="zona-busqueda">
-            <img src="manos.png" class="microbio-movil" alt="Virus">
-            <div class="caja-entrada">
-                <input type="text" id="buscadorPaises" placeholder="Escribe el nombre de un país..." autocomplete="off">
+    <nav class="navegacion-fija">
+        <div class="contenedor-busqueda">
+            <img src="manos.png" class="microbio-animado" alt="Virus">
+            <div class="entrada-busqueda">
+                <input type="text" id="idEntradaBusqueda" placeholder=" Escribe el nombre de un país..." autocomplete="off">
             </div>
         </div>
-        <div id="botonesContinente" class="lista-botones"></div>
+        <div id="idBotonesFiltro" class="botones-filtro"></div>
     </nav>
 
-    <main class="espacio-principal">
-        <div id="pantallaEspera" class="cargador oculto">
-            <div class="circulo-giratorio"></div>
+    <main class="contenedor-principal">
+        <div id="idCargador" class="cargador oculto">
+            <div class="rueda-progreso"></div>
         </div>
-        
-        <section id="rejillaPaises" class="cuadricula-paises"></section>
+        <section id="idContenedorResultados" class="cuadricula-contenedor"></section>
     </main>
 
-    <div id="ventanaInformacion" class="fondo-emergente oculto">
-        <div class="cuadro-datos">
-            <span id="cerrarVentana" class="boton-tache">&times;</span>
-            <div id="detallePais"></div>
+    <div id="idModalRaiz" class="capa-modal oculto">
+        <div class="caja-modal">
+            <span id="idCerrarModal" class="boton-cerrar">&times;</span>
+            <div id="idContenidoModal"></div>
         </div>
     </div>
 
