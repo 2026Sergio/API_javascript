@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=Q, initial-scale=1.0">
-    <title>CASOS COVID 19</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos covid 19</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div class="bloque-titulo">
+            <h1>casos covid 19</h1>
+            <p>Monitoreo de casos a nivel mundial</p>
+        </div>
+    </header>
+
+    <nav class="barra-fija">
+        <div class="zona-busqueda">
+            <img src="manos.png" class="microbio-movil" alt="Virus">
+            <div class="caja-entrada">
+                <input type="text" id="buscadorPaises" placeholder="Escribe el nombre de un país..." autocomplete="off">
+            </div>
+        </div>
+        <div id="botonesContinente" class="lista-botones"></div>
+    </nav>
+
+    <main class="espacio-principal">
+        <div id="pantallaEspera" class="cargador oculto">
+            <div class="circulo-giratorio"></div>
+        </div>
+        
+        <section id="rejillaPaises" class="cuadricula-paises"></section>
+    </main>
+
+    <div id="ventanaInformacion" class="fondo-emergente oculto">
+        <div class="cuadro-datos">
+            <span id="cerrarVentana" class="boton-tache">&times;</span>
+            <div id="detallePais"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
