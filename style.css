@@ -70,8 +70,12 @@ header {
     overflow: hidden;
 }
 .mano-animado {
-    width: 45px;
-    animation: pulsoIcono 2.5s infinite ease-in-out;
+    width: 50px;
+    animation: pulsoIcono 3.5s infinite ease-in-out;
+}
+.covid-animado {
+    width: 50px;
+    animation: pulsoIcono 3.5s infinite ease-in-out;
 }
 
 @keyframes pulsoIcono {
