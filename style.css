@@ -99,3 +99,64 @@ header {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+.contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.entrada-busqueda input {
+    width: 320px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+}
+
+.botones-filtro {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-filtro {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tarjeta {
+    background: var(--menta);
+    border: 1px solid var(--menta-oscuro);
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.tarjeta img {
+    width: 60px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.boton-cerrar {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
