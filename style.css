@@ -8,5 +8,17 @@
 body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
-    background: #274869;
+    background: #f1f5f9;
 }
+
+header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #3b82f6 100%);
+    color: white;
+    text-align: center;
+    padding: 3.5rem 1rem;
+    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.2);
+}
+
+.bloque-titulo { max-width: 800px; margin: 0 auto; }
+.bloque-titulo h1 { font-size: 2.2rem; margin: 0 0 10px 0; }
+.bloque-titulo p { font-size: 1.1rem; margin: 0; opacity: 0.85; }
