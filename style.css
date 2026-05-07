@@ -1,0 +1,12 @@
+:root {
+    --azul-oscuro: #0f172a;
+    --azul-brillante: #3b82f6;
+    --verde-menta: #e2f3f5;
+    --menta-borde: #c1e1e5;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #274869;
+}
