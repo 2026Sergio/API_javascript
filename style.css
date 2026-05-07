@@ -160,3 +160,29 @@ header {
     font-size: 2rem;
     cursor: pointer;
 }
+@media (max-width: 768px) {
+    .entrada-busqueda input {
+        width: 250px;
+    }
+    
+    .cuadricula-contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        padding: 1.5rem;
+        gap: 15px;
+    }
+
+    header {
+        padding: 2.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navegacion-fija {
+        padding: 10px 5px;
+    }
+
+    .btn-filtro {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
