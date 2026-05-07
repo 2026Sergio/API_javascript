@@ -1,8 +1,8 @@
 :root {
-    --azul-oscuro: #0f172a;
-    --azul-brillante: #3b82f6;
-    --verde-menta: #e2f3f5;
-    --menta-borde: #c1e1e5;
+    --primario: #0f172a;
+    --acento: #3b82f6;
+    --menta: #e2f3f5;
+    --menta-oscuro: #c1e1e5;
 }
 
 body {
@@ -16,33 +16,57 @@ header {
     color: white;
     text-align: center;
     padding: 3.5rem 1rem;
-    box-shadow: inset 0 -10px 20px rgba(0,0,0,0.2);
 }
 
-.bloque-titulo { max-width: 800px; margin: 0 auto; }
-.bloque-titulo h1 { font-size: 2.2rem; margin: 0 0 10px 0; }
-.bloque-titulo p { font-size: 1.1rem; margin: 0; opacity: 0.85; }
-.barra-fija {
+.navegacion-fija {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 999;
     background: #1e293b;
     padding: 15px 0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.zona-busqueda { display: flex; align-items: center; gap: 15px; margin-bottom: 12px; }
-
-.caja-entrada input {
-    width: 320px;
-    padding: 12px 25px;
-    border-radius: 30px;
-    border: none;
-    outline: none;
-    font-size: 1rem;
+.contenedor-principal {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.lista-botones { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.cuadricula-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 2.5rem;
+}
+
+/* Estructura del Modal */
+.capa-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+.caja-modal {
+    background: white;
+    padding: 35px;
+    border-radius: 25px;
+    max-width: 420px;
+    width: 90%;
+    position: relative;
+    text-align: center;
+}
+.oculto { 
+    display: none !important; 
+}
+
+.modal-abierto {
+    overflow: hidden;
+}
