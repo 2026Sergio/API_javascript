@@ -55,11 +55,14 @@ header {
 
 .caja-modal {
     background: white;
-    padding: 35px;
+    padding: 15px;
     border-radius: 25px;
     max-width: 420px;
     width: 90%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 .oculto { 
