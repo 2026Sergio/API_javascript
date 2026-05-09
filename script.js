@@ -32,16 +32,14 @@ function pintarEnPantalla(lista) {
     lista.forEach(pais => {
         htmlFinal += `
             <article class="tarjeta">
+                <img src="${pais.countryInfo.flag}" alt="Bandera de ${pais.country}">
                 <h2>${pais.country}</h2>
-                <img src="${pais.countryInfo.flag}" width="50px" alt="Bandera">
-                <br>
-                <div class="caja-modal" onclick="verDetalle('${pais.country}')">
-                <p> <b>Población: </b> ${pais.population.toLocaleString()}</p>
-                <p><b>Casos diarios: </b>${pais.todayCases}</p>
-                <p><b>Casos críticos: </b>${pais.critical}</p>
-                <p><b>Casos por millón: </b>${pais.criticalPerOneMillion}</p>
-                <p><b>Fallecidos: </b>${pais.deaths}</p>
-                </div>
+                <p><b>Población:</b> ${pais.population.toLocaleString()}</p>
+                
+                <!-- Botón de Ver Detalles -->
+                <button class="btn-ver" onclick="verDetalle('${pais.country}')">
+                    Ver detalles
+                </button>
             </article>`;
     });
 

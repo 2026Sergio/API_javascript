@@ -91,14 +91,11 @@ header {
     animation: giro 1s linear infinite;
     margin: 20px auto;
 }
-<<<<<<< HEAD
 @keyframes giro {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-=======
 
->>>>>>> 6700f1eb41e0d3cf1c3dd915717698540745259c
 .contenedor-busqueda {
     display: flex;
     align-items: center;
