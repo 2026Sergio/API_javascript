@@ -73,10 +73,18 @@ function pintarEnPantalla(lista) {
     console.log(listaPaisesBase)
 }
 
-function verDetalle(nombrePais) {
+async function verDetalle(nombrePais) {
     const pais = listaPaisesBase.find(p => p.country === nombrePais);
 
     if (pais) {
+        idContenidoModal.innerHTML = `
+            <div class="cargador-modal">
+                <div class="rueda-progreso"></div>
+                <p>Mostrar datos...</p>
+            </div>
+        `;
+        idModalRaiz.classList.remove('oculto');
+        await new Promise(resolve => setTimeout(resolve, 2000));
         idContenidoModal.innerHTML = `
             <h2>${pais.country}</h2>
             <img src="${pais.countryInfo.flag}" width="150px" style="border-radius: 8px" alt="Bandera de ${pais.country}">
@@ -89,9 +97,10 @@ function verDetalle(nombrePais) {
             <p><b>Pruebas:</b> ${pais.tests.toLocaleString()}</p>
             <p><b>Activos:</b> ${pais.active.toLocaleString()}</p>
         `;
-        idModalRaiz.classList.remove('oculto');
     }
 }
+
+
 
 idCerrarModal.onclick = function() {
     idModalRaiz.classList.add('oculto');
