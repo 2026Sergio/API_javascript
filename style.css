@@ -217,3 +217,57 @@ header {
     color: #333;
     font-weight: 500;
 }
+.contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 95%; 
+    max-width: 500px;
+    margin: 0 auto 12px auto; 
+}
+
+.entrada-busqueda {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.entrada-busqueda input {
+    width: 100%; 
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    min-width: 0; 
+}
+.mano-animado, .covid-animado {
+    width: 45px;
+    height: auto;
+    flex-shrink: 0; 
+}
+
+@media (max-width: 768px) {
+    .cuadricula-contenedor {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .mano-animado, .covid-animado {
+        width: 30px; 
+    }
+
+    .cuadricula-contenedor {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .caja-modal {
+        width: 95%;
+        max-height: 90vh;
+        overflow-y: auto; 
+    }
+}
